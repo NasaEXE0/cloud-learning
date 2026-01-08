@@ -49,3 +49,11 @@ The EC2 instance successfully serves a custom HTML page via its public IP addres
 Screenshots below show:
 - nginx running as a system service
 - the web page being served in a browser
+
+## Screenshots
+
+### nginx running on EC2
+![nginx status](screenshots/nginx-status.png)
+
+### Web page served from EC2
+![EC2 web page](screenshots/ec2-webpage.png)
