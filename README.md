@@ -57,3 +57,51 @@ Screenshots below show:
 
 ### Web page served from EC2
 ![EC2 web page](screenshots/ec2-webpage.png)
+
+## Cloud Learning – Week 2 (Networking Fundamentals)
+
+### Overview
+Week 2 focused on understanding how network traffic reaches a server, how web requests are processed, and how to diagnose connectivity issues in a cloud environment.
+
+The emphasis was on learning how to verify each layer of the network stack (DNS, IP addressing, ports, and services) and how to troubleshoot common access problems.
+
+---
+
+### What I did
+- Learned the difference between IP addresses and domain names
+- Understood how DNS resolves a domain name to an IP address
+- Studied the HTTP request lifecycle from browser to server and back
+- Learned the purpose of common ports (22, 80, 443)
+- Used `curl` to test HTTP endpoints from the command line
+- Verified connectivity using both domain names and raw IP addresses
+- Modified EC2 security group rules to allow and block traffic
+- Intentionally broke HTTP access by removing port 80 and restored it
+- Diagnosed issues by testing locally on the server versus externally
+
+---
+
+### Key concepts learned
+- DNS resolution (browser → resolver → authoritative DNS)
+- Endpoints as a combination of IP/domain, port, and service
+- Difference between application-level issues and network-level issues
+- How security groups control inbound traffic to EC2 instances
+- How to isolate failures using `curl`, `nslookup`, and SSH
+- Why a service can work locally but be unreachable from the internet
+
+---
+
+### Technologies & tools used
+- AWS EC2
+- Amazon Linux
+- nginx
+- SSH
+- `curl`
+- PowerShell
+- Linux networking tools
+
+---
+
+### Result
+The EC2 instance is reachable via HTTP from the public internet.
+
+I am able to verify DNS resolution, test endpoints using `curl`, and diagnose connectivity issues by identifying whether failures occur at the application, operating system, or AWS networking layer.
