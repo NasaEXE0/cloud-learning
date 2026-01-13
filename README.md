@@ -105,3 +105,101 @@ The emphasis was on learning how to verify each layer of the network stack (DNS,
 The EC2 instance is reachable via HTTP from the public internet.
 
 I am able to verify DNS resolution, test endpoints using `curl`, and diagnose connectivity issues by identifying whether failures occur at the application, operating system, or AWS networking layer.
+
+## Cloud Learning – Week 3 (Git & GitHub)
+
+### Overview
+Week 3 focused on using Git and GitHub as core tools for managing work, tracking progress, and maintaining a clear history of changes while learning cloud and automation concepts.
+
+The emphasis was on treating learning like a real technical project by using version control consistently rather than as a final step.
+
+---
+
+### What I did
+- Cloned repositories and worked locally using Git
+- Tracked changes using `git add`, `git commit`, and `git push`
+- Created and switched between branches to separate work logically
+- Merged branches back into the main branch
+- Resolved merge conflicts manually
+- Practised writing clear and meaningful commit messages
+- Pushed work to GitHub regularly
+- Used GitHub Issues to track tasks and learning goals
+
+---
+
+### Key concepts learned
+- Difference between local repositories and remote repositories
+- Why frequent, small commits are preferable to large commits
+- How branching supports parallel work and experimentation
+- How and why merge conflicts occur
+- How commit history communicates progress and intent
+- Using GitHub as both a version control platform and a task-tracking tool
+
+---
+
+### Technologies & tools used
+- Git
+- GitHub
+- GitHub Issues
+- Command line (PowerShell and Linux CLI)
+
+---
+
+### Result
+The repository maintains a clean, readable commit history that reflects continuous progress.
+
+All work across multiple weeks is tracked and versioned correctly, demonstrating a structured and professional workflow similar to real-world software and cloud projects.
+
+## Cloud Learning – Week 4 (Python Automation & EC2)
+
+### Overview
+Week 4 focused on using Python as an automation tool rather than just a local programming language.
+
+The goal was to understand how Python scripts interact with external services, process real data, and run on a remote cloud server. This week connected Python fundamentals with cloud infrastructure by running scripts on an AWS EC2 instance.
+
+---
+
+### What I did
+- Wrote Python scripts using functions and a modular structure
+- Created and used Python virtual environments to isolate dependencies
+- Installed third-party libraries using `pip`
+- Used the `requests` library to call public HTTP APIs
+- Parsed JSON responses returned by APIs
+- Implemented basic error handling for HTTP requests
+- Saved API output to files for persistence
+- Ran Python scripts on an Amazon Linux EC2 instance via SSH
+
+---
+
+### Key concepts learned
+- Difference between local Python execution and remote execution on a server
+- How virtual environments isolate Python dependencies per project
+- How HTTP APIs return structured JSON data
+- How to check and handle HTTP response status codes
+- Why file paths differ between Windows and Linux environments
+- How Python scripts can be used for automation tasks on cloud servers
+
+---
+
+### Technologies & tools used
+- Python 3
+- `requests`
+- Virtual environments (`venv`)
+- AWS EC2
+- Amazon Linux
+- SSH
+
+---
+
+### Result
+A Python script successfully runs on an EC2 instance, retrieves data from a public API, and saves the output to a file on the server.
+
+This demonstrates a complete automation workflow:
+- Remote execution
+- External data retrieval
+- Error handling
+- Persistent output
+
+
+
+
