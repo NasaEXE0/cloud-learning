@@ -253,9 +253,9 @@ This week brought together Linux, networking, Python automation, and AWS securit
 
 ## Result
 
-A fully working web application accessible via a public EC2 IP address that displays images stored in a **private S3 bucket**, using pre-signed URLs and a reverse-proxy architecture.
+A fully working web application accessible via a public EC2 IP address that displays images stored in a **private S3 bucket**, using pre-signed URLs and a reverse proxy architecture.
 
-This demonstrates secure cloud design principles and real-world service integration without making storage publicly accessible.
+This demonstrates secure cloud design principles and real world service integration without making storage publicly accessible.
 
 ---
 
