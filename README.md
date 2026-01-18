@@ -200,6 +200,72 @@ This demonstrates a complete automation workflow:
 - Error handling
 - Persistent output
 
+# Cloud Learning – Week 5 (IAM, S3 & Reverse Proxy Architecture)
+
+## Overview
+Week 5 focused on securely integrating multiple AWS services to build a real end-to-end web application.
+
+The goal was to understand how a public-facing website can display content stored in a **private Amazon S3 bucket** by using IAM roles, a backend API, and nginx as a reverse proxy, without exposing storage to the public internet.
+
+This week brought together Linux, networking, Python automation, and AWS security concepts into a single working system.
+
+---
+
+## What I did
+
+- Created a private Amazon S3 bucket to store image files
+- Attached an IAM role to the EC2 instance with least-privilege S3 permissions
+- Wrote a Python script to upload images to S3 using the EC2 IAM role
+- Used structured S3 object paths (`dogs/breed/<breed>/<timestamp>.jpg`)
+- Built a Flask API running locally on the EC2 instance
+- Generated pre-signed URLs for private S3 objects using boto3
+- Installed and configured nginx as a reverse proxy
+- Configured nginx to proxy `/api/*` requests to the Flask application on `127.0.0.1:5000`
+- Served a static HTML page using nginx that fetches image data from the API
+- Debugged nginx configuration errors and server block conflicts
+- Verified access locally and via the EC2 public IP address
+
+---
+
+## Key concepts learned
+
+- IAM roles vs long-lived access keys on EC2
+- Difference between bucket-level and object-level S3 permissions
+- Why S3 buckets should remain private by default
+- How pre-signed URLs provide temporary access to private objects
+- Difference between serving static files and reverse proxying requests
+- nginx server blocks, location matching, and `default_server` precedence
+- How to debug issues across multiple layers (browser, nginx, backend, AWS services)
+
+---
+
+## Technologies used
+
+- AWS EC2
+- Amazon S3
+- AWS IAM (roles and policies)
+- nginx
+- Python (boto3, requests, Flask)
+- Linux CLI
+- curl
+
+---
+
+## Result
+
+A fully working web application accessible via a public EC2 IP address that displays images stored in a **private S3 bucket**, using pre-signed URLs and a reverse-proxy architecture.
+
+This demonstrates secure cloud design principles and real-world service integration without making storage publicly accessible.
+
+---
+
+## Screenshots
+
+Screenshots below show:
+- The web gallery served via nginx
+- Images loaded from private S3 using pre-signed URLs
+- nginx successfully proxying API requests
+
 
 
 
